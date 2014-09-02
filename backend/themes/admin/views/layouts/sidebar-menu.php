@@ -9,17 +9,17 @@
 use mdm\admin\components\MenuHelper;
 use backend\themes\admin\widgets\Menu;
 
-//$menus = MenuHelper::getAssignedMenu(Yii::$app->user->id);
-//if (!empty($menus)) {
-//    echo Menu::widget(
-//        [
-//            'options' => [
-//                'class' => 'sidebar-menu',
-//            ],
-//            'items' => MenuHelper::getAssignedMenu(Yii::$app->user->id),
-//        ]
-//    );
-//}
+$menus = MenuHelper::getAssignedMenu(Yii::$app->user->id, null, null, true);
+if (!empty($menus)) {
+    echo Menu::widget(
+        [
+            'options' => [
+                'class' => 'sidebar-menu',
+            ],
+            'items' => $menus,
+        ]
+    );
+}
 
 echo Menu::widget(
     [
