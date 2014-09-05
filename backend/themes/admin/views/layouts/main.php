@@ -47,14 +47,16 @@ use yii\widgets\Breadcrumbs;
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header bg-light-blue">
-                                <?php /* if (Yii::$app->user->identity->profile->avatar_url) : ?>
+                                <?php /*
+
+                                var_dump(Yii::$app->user->identity->profile);exit;
+                                if (Yii::$app->user->identity->profile->avatar_url) : ?>
                                         <?= Html::img(Yii::$app->user->identity->profile->urlAttribute('avatar_url'), ['class' => 'img-circle', 'alt' => Yii::$app->user->identity->username]) ?>
                                     <?php endif; ?>
                                     <p>
                                         <?= Yii::$app->user->identity->profile->fullName ?> - <?= Yii::$app->user->identity->role ?>
-                                        <small><?= Yii::t('themes', 'Member since') ?> <?= Yii::$app->user->identity->created*/
-                                ?></small>
-                                </p>
+                                        <small><?= Yii::t('themes', 'Member since') ?> <?= Yii::$app->user->identity->created */?> </small>
+<!--                                </p>-->
                             </li>
                             <!-- Menu Footer-->
                             <li class="user-footer">

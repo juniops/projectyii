@@ -21,11 +21,6 @@ echo Menu::widget(
                 'active' => Yii::$app->request->url === Yii::$app->homeUrl
             ],
             [
-                'label' => Yii::t('themes', 'Users'),
-                'url' => ['/users/default/index'],
-                'icon' => 'fa-group'
-            ],
-            [
                 'label' => Yii::t('themes', 'Assigment'),
                 'url' => ['/admin/assigment'],
                 'icon' => 'fa-group'
@@ -50,26 +45,20 @@ echo Menu::widget(
                 'url' => ['/admin/rule'],
                 'icon' => 'fa-group'
             ],
-            ['label' => Yii::t('themes', 'Menu'),
-                'url' => ['/admin/menu'],
-                'icon' => 'fa-group',],
 
 
             ['label' => Yii::t('themes', '---'),
                 'url' => ['/admin/menu'],
-
                 'icon' => 'fa-group',],
+
+
             ['label' => Yii::t('themes', 'register'),
                 'url' => ['/user/registration/register'],
                 'icon' => 'fa-group',],
 
-//            ['label' => Yii::t('themes', 'resend'),
-//                'url' => ['/user/registration/resend'],
-//                'icon' => 'fa-group',],
-
-//            ['label' => Yii::t('themes', 'confirm'),
-//                'url' => ['/user/registration/confirm'],
-//                'icon' => 'fa-group',],
+            ['label' => Yii::t('themes', 'admin'),
+                'url' => ['/user/admin/index'],
+                'icon' => 'fa-group',],
 
             ['label' => Yii::t('themes', 'login'),
                 'url' => ['/user/security/login'],
@@ -83,25 +72,32 @@ echo Menu::widget(
                 'url' => ['/user/recovery/request'],
                 'icon' => 'fa-group',],
 
-            ['label' => Yii::t('themes', 'reset'),
-                'url' => ['/user/recovery/reset'],
-                'icon' => 'fa-group',],
-
             ['label' => Yii::t('themes', 'profile'),
                 'url' => ['/user/settings/profile'],
                 'icon' => 'fa-group',],
 
-            ['label' => Yii::t('themes', 'email'),
-                'url' => ['/user/settings/email'],
-                'icon' => 'fa-group',],
+//            ['label' => Yii::t('themes', 'reset'),
+//                'url' => ['/user/recovery/reset'],
+//                'icon' => 'fa-group',],
 
-            ['label' => Yii::t('themes', 'password'),
-                'url' => ['/user/settings/password'],
-                'icon' => 'fa-group',],
 
-            ['label' => Yii::t('themes', 'admin'),
-                'url' => ['/user/admin/index'],
-                'icon' => 'fa-group',],
+
+            //            ['label' => Yii::t('themes', 'resend'),
+//                'url' => ['/user/registration/resend'],
+//                'icon' => 'fa-group',],
+
+//            ['label' => Yii::t('themes', 'confirm'),
+//                'url' => ['/user/registration/confirm'],
+//                'icon' => 'fa-group',],
+
+//            ['label' => Yii::t('themes', 'email'),
+//                'url' => ['/user/settings/email'],
+//                'icon' => 'fa-group',],
+//
+//            ['label' => Yii::t('themes', 'password'),
+//                'url' => ['/user/settings/password'],
+//                'icon' => 'fa-group',],
+
         ]
     ]
 );
